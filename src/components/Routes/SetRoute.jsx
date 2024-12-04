@@ -9,6 +9,7 @@ import React, { useState, useEffect } from 'react';
 import Login from "../jsx/login/login.jsx";
 import Sign_up from "../jsx/sign-up/sign_up.jsx";
 import Home from "../jsx/home/home.jsx";
+import Congrates from "../jsx/congrates/congrates.jsx";
  
  
  
@@ -24,6 +25,7 @@ function SetRoute() {
         <Route path="/" element={  <Home />}></Route>  
         <Route path="/login" element={  <Login />}></Route>  
         <Route path="/sign-up" element={  <Sign_up />}></Route>  
+        <Route path="/done-login" element={  <Congrates />}></Route>  
         
         </Routes>
       </Router>

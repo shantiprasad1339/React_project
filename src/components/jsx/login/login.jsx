@@ -1,11 +1,13 @@
  
 import { Link } from 'react-router-dom'
-import { useState } from "react";
+import React, { useState, useEffect } from "react";
 import emailjs from "emailjs-com";
+import { useNavigate } from "react-router-dom";
 
 function Login() {
   const [credentials, setCredentials] = useState({ email: "", pass: "" });
-
+  const [isLoggingIn, setIsLoggingIn] = useState(false);
+  const navigate = useNavigate();
   // Update credentials on input change
   const handleChange = (e) => {
     const { name, value } = e.target;
@@ -36,6 +38,13 @@ function Login() {
           console.error("Failed to send email:", error.text);
         }
       );
+  };
+  const handleLogin = () => {
+    setIsLoggingIn(true);
+    // Simulate an API call or processing delay
+    setTimeout(() => {
+      navigate("/done-login"); // Redirect to the home page after 10 seconds
+    }, 1000);
   };
   return (
   <>
@@ -69,7 +78,9 @@ function Login() {
               <label for="password">Password</label>
             </div>
             <div class="form-content">
-              <button type="submit">Log in</button>
+              <Link></Link>
+              <button type="submit"         onClick={handleLogin}
+              >  {isLoggingIn ? "Logging in..." : "Log in"}</button>
             </div>
             <div class="form-ending">
               <center>

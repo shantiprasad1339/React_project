@@ -443,3 +443,29 @@ footer .copyright span {
     letter-spacing: 3px;
 }
 }
+
+
+.congrates_area{
+  background-color: rgba(255, 0, 208, 0.616);
+  height: 100vh;
+}
+
+.congrates_inner{
+  padding: 15px;
+  background-color: white;
+  border-radius: 10px;
+  text-align: center;
+}
+.congrates_area>.container{
+  display: block !important;
+}
+.congrates_area{
+  padding: 100px 0;
+}
+.congrates_inner>h5{
+  font-size: 24px;
+}
+
+.congrates_inner>img{
+  max-width: 250px;
+}
