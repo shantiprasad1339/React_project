@@ -1,0 +1,445 @@
+//  color
+$pink-color: #CA77E7;
+$white-color: #fff;
+$black-color: #000;
+$bermuda: #77d7b9;
+$white: #fff;
+$black: #000;
+$main:#03609c;
+//  Fonts
+$Rubik: "Rubik", sans-serif;
+
+:root {
+    --panel-width: calc(100% / 6);
+    --darkblue: #02020c;
+    --white: #fff;
+    --lightgray: #fafafb;
+}
+
+@import url('https://fonts.googleapis.com/css2?family=Rubik:ital,wght@0,300..900;1,300..900&display=swap');
+
+ 
+// .form_box>button:hover{
+//     /* background-color: red; */
+// }
+// .form_box>button:focus{
+//     outline: 0px !important;
+//     border: 0px !important;
+// }
+
+// .form_box>label{
+//     display: flex;
+//    margin-bottom: 5px;
+// }
+// .form_box>input{
+//     width: 100%;
+//     padding: 11px 10px;
+//     border: 1px solid #08609e;
+//     color: #08609e;
+//     border-radius: 4px;
+//     background-color: #ffffff;
+// }
+// .form_box>input::placeholder{
+//     color: #08609e;
+
+// }
+// .form_box>input:focus{
+//     outline: none;
+// }
+// .form_box>input[type="file"]{
+//     padding: 20px 20px;
+    
+// }
+// .form_box>button{
+//     padding: 10px 40px;
+//     background-color: #003953;
+//     color: white;
+//     display: flex;
+//     width: fit-content;
+//     border-radius: 8px;
+//     border: 0;
+// }
+// .login_area{
+//     height: 100vh;
+//     width: 100%;
+// }
+
+// .login_inner{
+// background-color: white;
+// padding: 30px 40px;
+// border-radius: 10px;
+// }
+// .login_inner>img{
+//     text-align: center;
+//     width: 250px;
+//     display: flex;
+//     align-items: center;
+//     justify-content: center;
+//     margin: auto;
+// }
+// .form_box_n>button{
+//     background-color: #f47f2f;
+
+// }
+
+
+// .submited_box>img{
+//     width: 500px;
+// }
+
+// .submited_box>h6{
+//     font-size: 30px;
+//     font-weight: bold;
+//     text-align: center;
+//     margin-top: -20px;
+//     padding-bottom: 40px;
+// }
+
+
+// .form_box_a{
+//     padding: 10px 40px;
+//     background-color: #003953;
+//     color: white;
+//     display: flex;
+//     width: fit-content;
+//     border-radius: 8px;
+//     border: 0;
+//     text-decoration: none;
+// }
+
+
+@import url("https://fonts.googleapis.com/css2?family=Roboto:wght@100;300;400;500&display=swap");
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+  font-family: "Roboto", sans-serif;
+}
+body {
+  background: rgba(250, 250, 250, 1);
+  overflow-x: hidden;
+}
+
+.container {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  min-height: 90vh;
+}
+.container .col .box {
+  width: 350px;
+  height: 380px;
+  border: 1px solid rgba(219, 219, 219, 1);
+  background: white;
+  border-radius: 1px;
+  margin: 0 0 10px;
+  padding: 10px 0;
+  z-index: 2;
+}
+.container .col .box .title {
+  position: relative;
+  top: 5px;
+  text-align: center;
+}
+.container .col.content {
+  position: relative;
+  top: 12px;
+}
+.container .col .box .title img {
+  width: 190px;
+  height: 80px;
+}
+.container .col .box .login-form {
+  position: relative;
+  height: 260px;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  flex-direction: column;
+}
+.container .col .box .login-form .form-content {
+  position: relative;
+  margin: 5px 0;
+  top: 22px;
+}
+.container .col .box .login-form label {
+  position: absolute;
+  top: 50%;
+  transform: translateY(-50%);
+  left: 9px;
+  font-size: 12px;
+  color: rgba(142, 142, 142, 1);
+  pointer-events: none;
+  order: -1;
+  transition: 0.3s ease;
+}
+.container .col .box .login-form input {
+  background: transparent;
+  width: 270px;
+  height: 40px;
+  background: rgba(250, 250, 250, 1);
+  border: 1px solid rgba(219, 219, 219, 1);
+  border-radius: 3px;
+  padding: 9px 0 7px 8px;
+  font-size: 14px;
+  transition: 0.3s ease;
+}
+.container .col .box .login-form input:valid {
+  padding-bottom: 0;
+}
+.container .col .box .login-form input:valid + label {
+  transform: translateY(-16px);
+  font-size: 10px;
+}
+.container .col .box .login-form button {
+  width: 270px;
+  
+  height: 30px;
+  border: none;
+  outline: none;
+  border-radius: 4px;
+  background-color: rgb(0, 148, 246);
+  color: white;
+}
+
+.container .col .box .login-form .form-ending {
+  position: relative;
+  width: 270px;
+  margin-top: 20px;
+  text-align: center;
+}
+.container .col .box .login-form .form-ending #OR {
+  color: rgba(142, 142, 142, 1);
+  background: white;
+  text-align: center;
+  width: 50px;
+  margin: 15px 0;
+  font-size: 13px;
+  font-weight: 500;
+  line-height: 15px;
+  z-index: 3;
+  position: relative;
+  display: block;
+}
+.container .col .box .login-form .form-ending #line {
+  z-index: 1;
+  position: absolute;
+  left: 50%;
+  transform: translateX(-50%);
+  top: 22px;
+  width: 270px;
+  height: 1px;
+  background: rgba(219, 219, 219, 1);
+}
+.container .col .box .login-form .form-ending p#facebook {
+  color: #385185;
+  cursor: pointer;
+  font-size: 14px;
+  font-weight: 500;
+  margin-top: 15px;
+}
+.container .col .box .login-form .form-ending p#facebook i {
+  margin-right: 8px;
+  font-size: 16px;
+  position: relative;
+  top: 1px;
+}
+.container .col .box .login-form .form-ending a {
+  position: relative;
+  top: 15px;
+  text-decoration: none;
+  color: rgba(0, 55, 107, 1);
+  font-size: 12px;
+  line-height: 14px;
+  text-align: center;
+}
+/* mini box  */
+.container .col .mini-box {
+  width: 350px;
+  height: 65px;
+  background: white;
+  border: 1px solid rgba(219, 219, 219, 1);
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+.container .col .mini-box .text {
+  font-size: 14px;
+  color: rgba(38, 38, 38, 1);
+}
+.container .col .mini-box .text a {
+  text-decoration: none;
+  color: #0095f6;
+  font-weight: 400;
+}
+.container .col .download-section {
+  margin-top: 20px;
+  width: 350px;
+  height: 100px;
+  text-align: center;
+}
+.container .col .download-section p {
+  font-size: 14px;
+  line-height: 18px;
+}
+.container .col .download-section .images {
+  margin-top: 20px;
+  display: flex;
+  justify-content: center;
+  gap: 10px;
+}
+.container .col .download-section .images img {
+  width: 135px;
+  height: 40px;
+}
+footer {
+  padding: 30px 20px;
+}
+footer ul {
+  display: flex;
+  justify-content: center;
+  flex-wrap: wrap;
+  gap: 16px;
+  width: 35%;
+  margin: 0 auto 20px;
+}
+footer ul li {
+  font-size: 12px;
+  line-height: 14px;
+  list-style: none;
+  color: rgba(142, 142, 142, 1);
+  cursor: pointer;
+}
+footer .copyright {
+  display: flex;
+  justify-content: center;
+  gap: 10px;
+}
+footer .copyright select {
+  font-size: 12px;
+  background: none;
+  color: rgba(142, 142, 142, 1);
+  border: none;
+  cursor: pointer;
+}
+footer .copyright select option {
+  width: 50px;
+}
+footer .copyright span {
+  font-size: 12px;
+  line-height: 14px;
+  color: rgba(142, 142, 142, 1);
+}
+@import url('https://fonts.googleapis.com/css2?family=Anton&display=swap');
+@keyframes change-color-anim {
+	0%,100%{
+		background-color: #ff0000;
+	}
+	50%{
+		background-color: #3300ff;
+	}
+}
+.banner_page{
+    height: 100vh;
+   
+    background-color: #ff00a6;
+	animation: change-color-anim 20s linear infinite;
+    position: relative;
+
+}
+.banner_page::before{
+    position: absolute;
+    content: '';
+    left: 0;
+    top: 0;
+    width: 100%;
+    height: 100%;
+    background: url('https://img.freepik.com/free-vector/gradient-instagram-social-media-background_23-2150956633.jpg?t=st=1733248841~exp=1733252441~hmac=708710421794a0e17f40406f6de0c0641509bf5e54eda2ca49f079fe6521f1b4&w=1060');
+    background-repeat: no-repeat;
+    background-size: 100%;
+    background-position: center;
+    opacity: 0.4;
+    mix-blend-mode: difference;
+}
+.z-11{
+    position: relative;
+    z-index: 2222;
+}
+.banner_page{
+    display: flex;
+    align-items: center;
+    justify-content: center;
+}
+.banner_page>.followw_box>h1{
+    font-size: 50px;
+    color: white;
+    font-family: "Anton", sans-serif;
+   letter-spacing: 5px;
+}
+.banner_page>.followw_box>a{
+    padding: 13px 30px;
+    background-color: rgb(0, 148, 246);
+    color: white;
+    text-decoration: none;
+    justify-content: center;
+    margin: auto;
+    margin-top: 22px;
+    display: flex;
+    border-radius:5px;
+    width: fit-content;
+    font-size: 22px;
+
+}
+.banner_page>.followw_box{
+    text-align: center;
+}
+
+
+@media (max-width: 900px) {
+  footer ul {
+    width: 100%;
+  }
+}
+@media (max-width: 850px) {
+  #image {
+    display: none;
+  }
+  .col.image{
+    display: none;
+  }
+  .container .col .box{
+    width: 100%;
+ 
+}
+.container .col .mini-box{
+    width: 100%;
+
+}
+.container .col .download-section{
+    width: 100%;
+}
+.banner_page > .followw_box > h1{
+    font-size: 30px;
+}
+.banner_page::before{
+    background-size: cover;
+}
+}
+
+@media (max-width: 440px) {
+  .container {
+    min-height: 80vh;
+  }
+  .container .col .box,
+  .container .col .mini-box {
+    border: none;
+    background-color: transparent;
+  }
+  .banner_page > .followw_box > h1{
+    font-size: 30px;
+  }
+  .banner_page > .followw_box > h1 {
+    font-size: 27px;
+    letter-spacing: 3px;
+}
+}
